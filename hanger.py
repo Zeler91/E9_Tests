@@ -52,6 +52,7 @@ def play_test():
     rus_base = fill_base_from_file("word_rus.txt")
     bot.init_conf(word_base, attempts)
     # bot.init_conf(rus_base, attempts)
+    print("Hi! Let's play 'Hanger'. You have only 4 attempts.")
     print(bot.print_word())
     while bot.attempts_count > 0:
         print("Type letter")
