@@ -1,14 +1,14 @@
 # E9_Tests
 [![Travis][build-badge]][build]
-[build-badge]: https://img.shields.io/travis/ githubname / reponame /master.png?style=flat-square
-[build]: https://travis-ci.org/ githubname / reponame
+[build-badge]:https://img.shields.io/travis/Zeler91/E9_Tests/master.png?style=flat-square
+[build]:https://travis-ci.org/Zeler91/E9_Tests
 
-склонировать этот репозиторий;
-перейти в папку с ним;
-создать виртуальное окружение python -m venv venv;
-активировать его;
-установить зависимости pip install -r requirements.txt;
-находясь в корневой папке: 
+1. склонировать этот репозиторий;
+2. перейти в папку с ним;
+3. создать виртуальное окружение python -m venv venv;
+4. активировать его;
+5. установить зависимости pip install -r requirements.txt;
+6. находясь в корневой папке: 
  - для просмотра и игры python hanger.py
  - для запуска тестов python -m pytest --cov=. tests/test_pytest.py
  
