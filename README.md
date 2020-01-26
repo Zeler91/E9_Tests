@@ -1,6 +1,8 @@
 # E9_Tests
 [![Travis][build-badge]][build]
+
 [build-badge]:https://img.shields.io/travis/Zeler91/E9_Tests/master.png?style=flat-square
+
 [build]:https://travis-ci.org/Zeler91/E9_Tests
 
 1. склонировать этот репозиторий;
