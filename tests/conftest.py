@@ -3,6 +3,5 @@ import hanger
 
 @pytest.fixture()
 def test_bot():
-    test_bot = hanger.AI([], 4)
-    test_bot.secret_word = "test"
+    test_bot = hanger.AI(['test'], 4)
     return test_bot
