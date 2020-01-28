@@ -17,7 +17,7 @@ class AI():
     current_word = ''
     attempts_count = 0
 
-    def init_conf(self, word_base, att):
+    def __init__(self, word_base, att):
         self.wb = word_base
         self.attempts_count = att
         self.secret_word = self.wb[random.randint(0,len(self.wb) - 1)]
@@ -48,10 +48,9 @@ class AI():
             return "Good! " + "You have {} attempts".format(self.attempts_count)
 
 def play_test():
-    bot = AI()
     rus_base = fill_base_from_file("word_rus.txt")
-    bot.init_conf(word_base, attempts)
-    # bot.init_conf(rus_base, attempts)
+    bot = AI(word_base, attempts)
+    # bot = AI(rus_base, attempts)
     print("Hi! Let's play 'Hanger'. You have only 4 attempts.")
     print(bot.print_word())
     while bot.attempts_count > 0:
