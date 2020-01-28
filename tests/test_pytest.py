@@ -12,8 +12,7 @@ def test_fill_base_from_file():
 
 def test_init():
     test_base = hanger.fill_base_from_file("test.txt")
-    test_bot = hanger.AI()
-    test_bot.init_conf(test_base, 4)
+    test_bot = hanger.AI(test_base, 4)
     assert test_bot.attempts_count == hanger.attempts
     assert test_bot.wb == test_base
 
